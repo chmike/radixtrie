@@ -43,3 +43,9 @@ The method `Insert` adds the key and value pair to the RadixTrie, and return the
 The method `Remove`removes a key and its associated value if it exist in the trie. It returns the value and true if the key was found.
 
     func (r *RadixTrie) Remove(key string) (interface{}, bool)
+    
+### String
+
+The method `String` returns a multiline representation of the radix trie content. It exposes the trie structure and makes it handy for educational purpose.
+
+    func (r *RadixTrie) String() string
